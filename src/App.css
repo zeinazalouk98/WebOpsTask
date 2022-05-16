@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,45 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+/* change the link color */
+.navbar-nav .nav-item .nav-link,
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 1.02vw;
+    margin-right: 1vw;
+    font-weight: normal;
 }
+/* change the color of active or hovered links */
+ .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: black;
+    font-weight: bold;
+  }
+  .dropdown-toggle::after {
+    display: none !important; 
+    
+  }
+ 
+::placeholder{
+  text-align:center;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    margin-left: 0.5vw;
+    margin-top: -0.2vw;
+    display: block;
+    width: 1vw;
+    height: 1vw;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+
