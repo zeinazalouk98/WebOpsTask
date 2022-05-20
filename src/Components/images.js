@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 const Image = styled.img`
 
-  width:19vw;
-  height:10.5vw;
+  width: ${props => props.width};
+  height:${props => props.height};
   margin-left:vw;
   margin-top:vw;
   margin-right:0vw;
-  border-radius:1vw;
+  border-radius:${props => props.radius};
 
 
 `;
@@ -44,7 +44,7 @@ export default function
     <div>
       
     <DIV>
-    <Image src={props.im}></Image>
+    <Image src={props.im} width={props.width} height={props.height} radius={props.radius}></Image>
 
     <Text>{props.t}</Text>
     </DIV>

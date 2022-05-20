@@ -43,9 +43,10 @@ font-weight: normal;
 `
 
 const DropDownListContainer = styled("div")`
-
+position:absolute;
 margin-top:0;
  visibility: hidden;`;
+ 
 
 const DropDownList = styled("ul")`
   padding: 0;
@@ -64,6 +65,7 @@ const DropDownList = styled("ul")`
     padding-top: 0;
   }
   visibility: hidden;
+
 `;
 
 const ListItem = styled("li")`
@@ -85,6 +87,7 @@ const DropDownContainer = styled("div")`
   width: 9vw;
   margin-top:0vw ;
   margin-left:-2vw;
+  
  
   
   &:hover{
@@ -105,7 +108,7 @@ const DropDownHeader = styled("div")`
   padding: 0.4em 2em 0.4em 1em;
   color: black;
 font-size: 0.8vw;
-margin-right: 1vw;
+margin-right: 1vxw;
 font-weight: normal;
   background: transparent;
  &:hover{

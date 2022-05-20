@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Nav from './Components/nav'
 import Options from'./Components/Options'
 import Buttons from './Components/Buttons'
+import FeaturedVendors from './Components/FeaturedVendors';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       {/* <Header></Header> */}
 
       <Nav></Nav> 
-      <table>
+      <table style={{ marginTop: "8vw"}}>
 
         <tr>
 
@@ -19,6 +20,7 @@ function App() {
           <td><Options></Options></td>
         </tr>
       </table>
+      <FeaturedVendors/>
 
     </div>
   );
