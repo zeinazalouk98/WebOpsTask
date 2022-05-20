@@ -9,7 +9,7 @@ const SearchContainer = styled.div `
 
 height:2.5vw;
 border-color: #e2e8f0;  
-width: 15vw;
+width: ${props => props.width};
 display: flex;
 align-items:center;
 position:relative;
@@ -51,14 +51,14 @@ margin-top: -1vw
 `
 
 
-export default function searchBar() {
+export default function searchBar(props) {
 
   return (
     <div> 
         <table>
             <tr>
                 <td>
-                <SearchContainer>
+                <SearchContainer  width= {props.width}  >
             <Icon>
                 <AiOutlineSearch/>
             </Icon>

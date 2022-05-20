@@ -264,7 +264,7 @@ export default function
         
       </DropDownContainer>
   </td>
-           <td><SearchBar></SearchBar></td>
+           <td><SearchBar width="15vw"></SearchBar></td>
            <td> <Icon>
             <BsFillPersonFill/>
             </Icon>
