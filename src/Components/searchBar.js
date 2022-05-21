@@ -14,7 +14,7 @@ display: flex;
 align-items:center;
 position:relative;
 transition: all 0.3s ease;
-margin-top: -6vw;
+
 
 
 `
@@ -33,7 +33,7 @@ margin-top: -6vw
     
  }
  &::placeholder {
-    margin-left:6vw;
+    margin-left:vw;
     font-weight:normal;
 
 `
@@ -44,7 +44,7 @@ width:1vw;
 border:none;
 z-index:1;
 background: transparent;
-margin-top: -1vw
+margin-top: vw
 
 
 

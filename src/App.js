@@ -1,26 +1,9 @@
-
-
-import Header from './Components/Header';
-import Nav from './Components/nav'
-import Options from'./Components/Options'
-import Buttons from './Components/Buttons'
-import FeaturedVendors from './Components/FeaturedVendors';
-
+import GalleryPage from './pages/GalleryWedding'
 function App() {
   return (
     <div>
-      {/* <Header></Header> */}
+     < GalleryPage/>
 
-      <Nav></Nav> 
-      <table style={{ marginTop: "8vw"}}>
-
-        <tr>
-
-          <td><Buttons></Buttons></td>
-          <td><Options></Options></td>
-        </tr>
-      </table>
-      <FeaturedVendors/>
 
     </div>
   );

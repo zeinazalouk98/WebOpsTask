@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import styled from "styled-components";
-import logo from "../images/logo.png";
 import SearchBar from '../Components/searchBar';
 import {BsFillPersonFill} from 'react-icons/bs';
 
@@ -44,7 +43,7 @@ font-weight: normal;
 
 const DropDownListContainer = styled("div")`
 position:absolute;
-margin-top:0;
+margin-top:-1vw;
  visibility: hidden;`;
  
 
@@ -138,7 +137,7 @@ export default function
   
   return (
     <div>
-          <Logo src={logo} /> 
+          <Logo src='images/logo.png' /> 
         <Table1>
             <tr>
           
@@ -272,7 +271,7 @@ export default function
             <BsFillPersonFill/>
             </Icon>
             </td>
-            <span style={{position:"absolute",fontWeight:"bold",marginLeft:'2vw',marginTop:'0.5vw'}}>ع </span> 
+            <span style={{position:"absolute",fontWeight:"bold",marginLeft:'2vw',marginTop:'0.5vw', backgroundColor:'black', color:"white", width:'1.1vw', borderRadius:'0.3vw', textAlign:"center", height:"1.8vw",fontSize:"0.8vw"}}>ع </span> 
 
          
            

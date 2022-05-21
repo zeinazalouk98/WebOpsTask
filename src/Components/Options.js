@@ -1,85 +1,89 @@
 import React ,{ useState } from 'react'
-import Images1 from '../images/1.jpeg'
 
-import Images2 from '../images/2.jpeg'
-
-import Images3 from '../images/3.jpeg'
-
-import Images4 from '../images/4.jpeg'
-import Images5 from '../images/5.jpeg'
-
-import Images6 from '../images/6.jpeg'
-import vendors1 from '../images/vendor1.webp'
-import vendors2 from '../images/vendor2.webp'
-import vendors3 from '../images/vendor3.webp'
-import vendors4 from '../images/vendor4.webp'
+import styled from 'styled-components'
 
 import ImagePage from '../Components/images'
 
 
-export default function Options() {
 
-    // const IMAGES = {
-    //     image1: require(Images1),
-    //     image2: require('../images/2.jpeg'),
-    //     image3: require('../images/3.jpeg'),
-    //     image4: require('../images/4.jpeg'),
-    //     image5: require('../images/5.jpeg'),
-    //     image6: require('../images/6.jpeg'),
+
+
+const Grid= styled.div `
+display: grid;
+grid-template-columns: auto auto auto;
+gap: 10px;
+width:;
+
+` 
+    
+  
+  
+  
+
+
+export default function Options() {
         
-    //   };
       
       
-        const [images, setImages] = useState([
-          { id: '1', image: Images1 },
-          { id: '2', image: Images2 },
-          { id: '3', image: Images3 },
-          { id: '4', image: Images4 },
-          { id: '5', image: Images5},
-          { id: '6', image: Images6 },
-          { id: '7', image: vendors1 },
-          { id: '8', image: vendors2 },
-          { id: '9', image: vendors3 },
-          { id: '10', image: vendors4 },
+        const [data, setData] = useState([
+          { id: '1', image: 'images/1.jpeg', name: 'Irresistible appetizers', type: 'option' },
+          { id: '2', image: 'images/2.jpeg' , name: 'GuestBook Cards', type: 'option' },
+          { id: '3', image: 'images/3.jpeg' , name: 'Nature inspired candy station', type: 'option'},
+          { id: '4', image: 'images/4.jpeg', name: 'Wedding chocolate mini boxes', type: 'option' },
+          { id: '5', image: 'images/5.jpeg', name: 'Wedding table numbers', type: 'option'},
+          { id: '6', image: 'images/6.jpeg', name: 'Live ice cream station', type: 'option' },
+          { id: '7', image: 'vendor1.webp' , name: 'vendor1', type: 'vendor'},
+          { id: '8', image: 'vendor2.webp', name: 'vendor2', type: 'vendor' },
+          { id: '9', image: 'vendor3.webp' , name: 'vendor3', type: 'vendor'},
+          { id: '10', image: 'vendor4.webp', name: 'vendor4', type: 'vendor' },
     
         ]);
+
+      
+
+
     
   
 
   return (
+    
       
-    <div>
-        
-        {/* {images.map((image, id) => <ImagePage im={image} t="heelloo" />  )} */}
+<div style={{width:'100vw'}}>      
+
+
+    
+      
+        {/* { data.filter(item=>item.type ==='option').map((image, id) => <ImagePage im={image} t="heelloo" width='10px' />  )} */}
           
 
-    <table>
+    {/* <table>
 
-
+  
     <tr>
         <td>
-        <ImagePage im={Images1} t="Irresistible appetizers’ corner" width="19vw" height="10.5vw"  radius="1vw"/>  
+        <ImagePage im={Images1} color="black" size="1.02vw" t="’ corner" width="19vw" height="10.5vw"  radius="1vw"
+         align="center" margin="-0.5vw"/>  
         </td>
         <td>
-        <ImagePage im={Images2} t="GuestBook Cards"  width="19vw" height="10.5vw"  radius="1vw"/> 
+        <ImagePage im={Images2} color="black" size="1.02vw" t="GuestBook Cards"  width="19vw" height="10.5vw"  margin="-0.5vw" radius="1vw"  align="center"/> 
 
         </td>
         <td>
-        <ImagePage im={Images3} t="Nature inspired candy station" width="19vw"height="10.5vw"  radius="1vw"/> 
+        <ImagePage im={Images3} color="black" size="1.02vw" t="Nature inspired candy station" width="19vw"height="10.5vw"  margin="-0.5vw"  radius="1vw" align="center"/> 
 
         </td>
     </tr>
     
     <tr>
         <td>
-        <ImagePage im={Images4} t="Wedding chocolate mini boxes" width="19vw" height="10.5vw"  radius="1vw"/>  
+        <ImagePage im={Images4} color="black" size="1.02vw" t="Wedding chocolate mini boxes" width="19vw" height="10.5vw"  margin="-0.5vw"  radius="1vw"  align="center" />  
         </td>
         <td>
-        <ImagePage im={Images5} t="Wedding table numbers" width="19vw"height="10.5vw"  radius="1vw"/> 
+        <ImagePage im={Images5} color="black" size="1.02vw" t="Wedding table numbers" width="19vw"height="10.5vw"  radius="1vw"   margin="-0.5vw" align="center"/> 
 
         </td>
         <td>
-        <ImagePage im={Images6} t="Live ice cream station" width="19vw"height="10.5vw" radius="1vw"/> 
+        <ImagePage im={Images6} color="black" size="1.02vw" t="Live ice cream station" width="19vw"height="10.5vw" radius="1vw"  margin="-0.5vw"  align="center"/> 
 
         </td>
     </tr>
@@ -88,14 +92,23 @@ export default function Options() {
 
 
     </table>
-             
+              */}
+    
+
+<Grid>
+    
+  
+  {data.filter(item=>item.type ==='option').map((image, id) => 
+   <ImagePage im={image} color="black" size="1.02vw" t={image.name} width="19vw"height="10.5vw" radius="1vw"  margin="-0.5vw"  align="center"></ImagePage>)} 
+ 
 
 
-        
+</Grid>
+
+</div>   
 
 
 
 
-    </div>
   )
 }

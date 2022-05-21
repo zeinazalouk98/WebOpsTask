@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import { Button,Nav,NavDropdown,Container,Form,FormControl} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "../images/logo.png"
+
 import '../App.css';
 
 
@@ -19,7 +19,7 @@ export default function Header() {
   <Container fluid>
 
     <Navbar.Brand href="#">
-    <img  src={logo} alt="Workflow" style={{width:"5.7vw",height:"4vw" , marginLeft:"5.3vw",marginTop:"0.8vw",marginRight:"6vw"}} />
+    <img  src='logo.png' alt="Workflow" style={{width:"5.7vw",height:"4vw" , marginLeft:"5.3vw",marginTop:"0.8vw",marginRight:"6vw"}} />
     </Navbar.Brand>
 
     <Navbar.Toggle aria-controls="navbarScroll" />
