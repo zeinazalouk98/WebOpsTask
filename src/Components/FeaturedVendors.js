@@ -23,8 +23,14 @@ gap: 10px;
 margin-left:vw;
 width:15vw
 ` 
-    
-
+const Div = styled.div ` margin-left: 15vw;
+ margin-top: 2vw`
+const Div1 = styled.div `background-Color:rgb(246, 246, 246);
+margin-top:2vw`
+const Div2 =styled.div `
+margin-left:12vw;
+margin-top:2vw;    height: 22vw}}
+`
 
 export default function FeaturedVendors() {
 
@@ -35,6 +41,15 @@ export default function FeaturedVendors() {
                 { id: '2', image: 'images/vendor2.webp', name: 'Maram Borhan', type: 'vendor' },
                 { id: '3', image: 'images/vendor3.webp' , name: 'Dina Ragheb', type: 'vendor'},
                 { id: '4', image: 'images/vendor4.webp', name: 'Mangawy Owes Photography', type: 'vendor' },
+                { id: '5', image: 'images/sheraton.webp', name: 'Sheraton Miramar Resort El-Gouna', type: 'vendor' },
+                { id: '6', image: 'images/iman.webp' , name: "Iman Saab", type: 'note'},
+                { id: '7', image: 'images/rustique.webp', name: "Rustique Events", type: 'note' },
+                { id: '8', image: 'images/dina.webp' , name: "Dina Mourad", type: 'note'},
+                { id: '9', image: 'images/hoxton.webp', name: "Huxton House", type: 'note' },
+                { id: '10', image: 'images/aya.webp', name: "Aya Abdelhamid", type: 'note' },
+                { id: '11', image: "images/iram.webp", name: "Iram", type: 'note' },
+                   
+                 
           
               ]);
 
@@ -44,21 +59,54 @@ export default function FeaturedVendors() {
 
   return (
     
-      
-    <div style={{    marginLeft: "17vw", marginTop: "2vw"}}>
+     <div> 
+    <Div>
         
             <Text> Featured Vendors</Text>
  
-<Grid>
+                <Grid>
     
   
-  {data.filter(item=>item).map((image, id) => 
-   <ImagePage im={image} t={image.name} color1="rgba(156,163,175)" t2={image.name} height2="20vw" color="black" size="1.02vw" width="15vw" margin="-1vw" height= "16vw"  radius="0.5vw 0.5vw 0 0 "/>  
-   )}
+                 {data.filter(item=>item.type==="vendor").map((image, id) => 
+                 <ImagePage im={image} t={image.name} color1="rgba(156,163,175)" t2={image.name} height2="16vw" color="black" size="0.84vw" width="13vw" margin="-1vw" height= "12vw"  radius="0.5vw 0.5vw 0 0 "/>  
+                        )}
 
-</Grid>
+                </Grid>
 
 
-    </div>
+        </Div>
+
+
+
+
+    {/* new and noteable part */}
+        <div>
+        <Div1>
+        
+        
+        <Div2>
+       
+        <Text>New and Notable</Text>
+        <Grid>
+
+
+        {data.filter(item=>item.type=== "note"  ).map((image, id) => 
+        <ImagePage im={image} t={image.name} color1="rgba(156,163,175)" t2={image.name} height2="10.5vw" color="black" size="0.75vw" width="8vw" margin="-0.5vw" height= "7vw"  radius="0.5vw 0.5vw 0 0 "/>  
+        )}
+
+        </Grid>
+
+
+
+        </Div2>
+
+
+
+
+        </Div1>
+
+        </div>
+        </div>
+    
   )
 }

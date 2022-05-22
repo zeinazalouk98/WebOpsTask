@@ -33,7 +33,7 @@ margin-top: -6vw
     
  }
  &::placeholder {
-    margin-left:vw;
+    margin-left:4vw;
     font-weight:normal;
 
 `
@@ -62,7 +62,8 @@ export default function searchBar(props) {
             <Icon>
                 <AiOutlineSearch/>
             </Icon> 
-            <SearchInput placeholder="Search"></SearchInput>
+            {/* <SearchInput placeholder="Search"></SearchInput> */}
+            <SearchInput></SearchInput>
            
             
             </SearchContainer>

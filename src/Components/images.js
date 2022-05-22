@@ -28,7 +28,7 @@ margin-top: ${props => props.margin}
 const DIV = styled.div `
 
 box-shadow: var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow);
-border-radius:1vw;
+border-radius:0.5vw;
 background-color:;
 height:${props => props.height2};
 margin-left:5.3vw;

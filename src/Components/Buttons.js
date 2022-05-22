@@ -10,7 +10,7 @@ color:white;
 border-radius:0.5vw;
 width:17vw;
 margin-left:2vw;
-height:3vw;
+height:2vw;
 font-size:1.2vw;
 
 `
@@ -20,7 +20,7 @@ color:white;
 border-radius:12vw;
 width:4vw;
 margin-left:2vw;
-height:4vw;
+height:3vw;
 font-size:1.2vw;
 border: none;
 display: none;
@@ -31,7 +31,10 @@ display: none;
   
 `
 
-
+const P = styled.p`
+margin-top:-12vw;
+position:absolute;
+margin-left:10vw`
 
 export default function Buttons() {
 
@@ -56,8 +59,8 @@ export default function Buttons() {
     }
   return (
     <div>
-        <p style={{marginTop:'-12vw',position:'absolute'}}>Gallery >
-            Wedding Ideas</p>
+        <P>Gallery >
+            Wedding Ideas</P>
         <div  style={{marginLeft:"1vw"}}>
             <table>
                 <tr>

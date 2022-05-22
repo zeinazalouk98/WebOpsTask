@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const Text = styled.p`
 color: ${props => props.color};
-font-size: 1vw;
+font-size: 0.8vw;
 font-weight: ${props=>props.weight};
 text-align: left;
 margin-Left: ${props=>props.margin};
@@ -69,13 +69,13 @@ export default function Footer(props) {
                 <td>
                     <Text weight="bold" margin="18vw" color="rgb(128, 128, 128)" top="-3vw" position="absolute"> Contact Us</Text>
                     <tr>
-                        <td> <Text weight="bold" margin="18vw" color="white"   top="-1vw" position="absolute">Email: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="21.5vw" top="-1vw" position="absolute" >lovetohelp@weds360.com</Text></td> 
+                        <td> <Text weight="bold" margin="18vw" color="white"   top="-1vw" position="absolute">Email: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="20.4vw" top="-1vw" position="absolute" >lovetohelp@weds360.com</Text></td> 
                     </tr>
                     <tr>
-                        <td> <Text weight="bold" margin="18vw" color="white"   top="1vw" position="absolute">Address: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="22.5vw" top="1vw" position="absolute" >6B, 12 Aswan Square, Al Agouzah, Giza <br/>Governorate 12651</Text></td> 
+                        <td> <Text weight="bold" margin="18vw" color="white"   top="1vw" position="absolute">Address: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="21.3vw" top="1vw" position="absolute" >6B, 12 Aswan Square, Al Agouzah, Giza <br/>Governorate 12651</Text></td> 
                     </tr>
                     <tr>
-                        <td> <Text weight="bold" margin="18vw" color="white"   top="4vw" position="absolute">Phone: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="22.5vw" top="4vw" position="absolute" >+201066776677</Text></td> 
+                        <td> <Text weight="bold" margin="18vw" color="white"   top="4vw" position="absolute">Phone: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="20.5vw" top="4vw" position="absolute" >+201066776677</Text></td> 
                     </tr>
                    
                     {/* <Text weight="bold" margin="18vw" color="white" top="vw" position="absolute"> <Text color="rgb(128, 128, 128)">6B, 12 Aswan Square, Al Agouzah, Giza <br/>Governorate 12651</Text></Text>

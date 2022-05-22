@@ -19,7 +19,7 @@ function GalleryWedding() {
         </tr>
       </table>
       <FeaturedVendors/>
-      <NewAndNotable/>
+    
       <Footer></Footer> 
 
 

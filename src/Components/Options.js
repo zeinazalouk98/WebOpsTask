@@ -51,7 +51,7 @@ export default function Options() {
     
   
   {data.filter(item=>item).map((image, id) => 
-   <ImagePage im={image} color="black" size="1.02vw" t={image.name} width="19vw"height="10.5vw" radius="1vw"  margin="0.5vw"  align="center"></ImagePage>)} 
+   <ImagePage im={image} color="black" size="1.02vw" t={image.name} width="20vw"height="7vw" radius="0.5vw 0.5vw 0 0 " margin="-0.5vw"  align="center"></ImagePage>)} 
  
 
 
