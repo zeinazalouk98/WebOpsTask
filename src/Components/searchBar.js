@@ -61,9 +61,9 @@ export default function searchBar(props) {
                 <SearchContainer  width= {props.width}  >
             <Icon>
                 <AiOutlineSearch/>
-            </Icon>
+            </Icon> 
             <SearchInput placeholder="Search"></SearchInput>
-            
+           
             
             </SearchContainer>
             

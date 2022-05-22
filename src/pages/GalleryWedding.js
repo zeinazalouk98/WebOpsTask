@@ -3,7 +3,7 @@ import Nav from '../Components/nav'
 import Options from'../Components/Options'
 import Buttons from '../Components/Buttons'
 import FeaturedVendors from '../Components/FeaturedVendors';
-import NewAndNotable from '../NewAndNotable';
+import NewAndNotable from '../Components/NewAndNotable';
 import Footer from '../Components/Footer';
 function GalleryWedding() {
   return (
