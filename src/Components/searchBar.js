@@ -46,8 +46,6 @@ z-index:1;
 background: transparent;
 margin-top: vw
 
-
-
 `
 
 

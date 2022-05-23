@@ -29,7 +29,8 @@ const Div1 = styled.div `background-Color:rgb(246, 246, 246);
 margin-top:2vw`
 const Div2 =styled.div `
 margin-left:12vw;
-margin-top:2vw;    height: 22vw}}
+margin-top:2vw;  
+height: 22vw;
 `
 
 export default function FeaturedVendors() {
@@ -48,6 +49,9 @@ export default function FeaturedVendors() {
                 { id: '9', image: 'images/hoxton.webp', name: "Huxton House", type: 'note' },
                 { id: '10', image: 'images/aya.webp', name: "Aya Abdelhamid", type: 'note' },
                 { id: '11', image: "images/iram.webp", name: "Iram", type: 'note' },
+                { id: '12', image: 'images/new1.webp', name: "Mohamed Al Sagheer", type: 'note' },
+                { id: '13', image: 'images/new2.webp', name: "Khaled Almanaa", type: 'note' },
+                { id: '14', image: "images/new3.webp", name: "We Do Films", type: 'note' },
                    
                  
           
@@ -101,7 +105,7 @@ export default function FeaturedVendors() {
         </Div2>
 
 
-
+        
 
         </Div1>
 

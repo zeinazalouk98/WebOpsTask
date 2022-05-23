@@ -22,14 +22,16 @@ width:8vw;
 margin-left:1vw;
 height:2.5vw;
 font-size:1.2vw;
-
-
 `
+const Div = styled.div `
+background-color:black;
+borde-radius:1vw 1vw 0 0;
+height:10vw`
 export default function Footer(props) {
   return (
     <div>
 
-    <div style={{backgroundColor:"black", bordeRadius:"1vw 1vw 0 0", height:"10vw"}}>
+    <Div>
         <table>
             <tr>
                 <td>
@@ -77,9 +79,6 @@ export default function Footer(props) {
                     <tr>
                         <td> <Text weight="bold" margin="18vw" color="white"   top="4vw" position="absolute">Phone: </Text></td><td><Text color="rgb(128, 128, 128)"weight="bold" margin="20.5vw" top="4vw" position="absolute" >+201066776677</Text></td> 
                     </tr>
-                   
-                    {/* <Text weight="bold" margin="18vw" color="white" top="vw" position="absolute"> <Text color="rgb(128, 128, 128)">6B, 12 Aswan Square, Al Agouzah, Giza <br/>Governorate 12651</Text></Text>
-                    <Text weight="bold" margin="18vw" color="white"> <Text color="rgb(128, 128, 128)">+201066776677</Text></Text> */}
                 </td>
 
 
@@ -100,7 +99,7 @@ export default function Footer(props) {
 
 
 
-    </div>
+    </Div>
 
 
 

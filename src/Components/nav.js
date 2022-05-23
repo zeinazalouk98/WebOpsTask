@@ -15,7 +15,7 @@ width:1vw;
 border:none;
 z-index:1;
 background: transparent;
-margin-top: -6vw
+margin-top: -0.5vw
 
 
 
@@ -122,11 +122,19 @@ font-weight: normal;
 const Table1= styled.table`
 margin-left:15vw;
 margin-top:-4vw;
-
-
-
 `
-
+const Span = styled.span `
+position:absolute;
+font-weight:bold;
+margin-left:2vw;
+margin-top:0.5vw;
+background-Color:black;
+color:white;
+width:1.1vw;
+border-radius:0.3vw;
+text-align:center;
+height:1.8vw;
+font-size:0.8vw`
 
 
 export default function 
@@ -271,7 +279,7 @@ export default function
             <BsFillPersonFill/>
             </Icon>
             </td>
-            <span style={{position:"absolute",fontWeight:"bold",marginLeft:'2vw',marginTop:'0.5vw', backgroundColor:'black', color:"white", width:'1.1vw', borderRadius:'0.3vw', textAlign:"center", height:"1.8vw",fontSize:"0.8vw"}}>ع </span> 
+            <Span>ع </Span> 
 
          
            
