@@ -12,14 +12,26 @@ color:rgb(5, 106, 109);
 font-weight:bold;
 font-size:1.6vw;
 margin-top:5vw;
-position:absolute`
- 
+position:absolute;
+margin-left:11.5vw
+`
+
+const T = styled.p`
+color:Black;
+font-weight:normal;
+font-size:1.3vw;
+margin-top:5.2vw;
+position:absolute;
+margin-left:5vw
+
+`
+
 
 
 const Div= styled.div`
 
 margin-left:10vw,
-margin-top:vw`
+`
 
 export default function HomePage() {
   
@@ -28,8 +40,8 @@ export default function HomePage() {
     <div>
       <Nav/>
     <div>
-
-   <A><TypeAnimation
+    <T>Search For</T>
+   <A> <TypeAnimation
         cursor={true}
         sequence={[
           

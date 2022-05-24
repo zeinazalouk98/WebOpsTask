@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 
 
+
+
 const Button = styled.button`
 background-color:black;
 color:white;
@@ -63,7 +65,7 @@ export default function Buttons() {
     }
   return (
     <div>
-        <P>Gallery >
+        <P>Gallery -
             Wedding Ideas</P>
         <Div>
             <table>
